@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #4a90e2;
+  --primary-color: #0b376afb;
   --background-color: #f4f7f6;
   --card-background: #ffffff;
   --text-color: #333;
@@ -16,12 +16,18 @@ body {
 }
 
 .app-container {
-  max-width: 800px;
-  margin: 0 auto;
+  /* max-width: 800px; */
+  /* margin: 0 auto; */
   background-color: var(--card-background);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  width: 1000px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-left: 165px;
+
 }
 
 .app-header {
@@ -69,6 +75,8 @@ body {
   border-radius: 8px;
   font-size: 1em;
   box-sizing: border-box;
+  background-color: var(--background-color);
+  color: rgba(0, 0, 0, 0.611);
 }
 
 .form-group textarea {
@@ -211,4 +219,28 @@ li {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* ... (all your existing styles) ... */
+
+/* --- Styles for React Select --- */
+.react-select-container .react-select__control {
+  border-radius: 8px;
+  padding: 5px;
+  border-color: var(--border-color);
+  box-shadow: none;
+}
+
+.react-select-container .react-select__control--is-focused {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+.react-select-container .react-select__multi-value {
+  background-color: var(--background-color);
+}
+
+.react-select-container .react-select__multi-value__label {
+  color: var(--text-color);
+  font-weight: 500;
 }
