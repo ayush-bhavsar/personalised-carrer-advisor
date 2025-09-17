@@ -58,6 +58,7 @@ const validationSchema = Yup.object({
 
 const Step1_UserProfile = ({ onSubmit }) => {
   return (
+    <div className='main_div'>
     <div className="form-container">
       <h2>Step 1: Tell Us About Yourself</h2>
       <Formik
@@ -158,6 +159,7 @@ const Step1_UserProfile = ({ onSubmit }) => {
         )}
       </Formik>
     </div>
+  </div>
   );
 };
 

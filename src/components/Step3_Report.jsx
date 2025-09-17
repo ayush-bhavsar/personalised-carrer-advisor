@@ -1,4 +1,6 @@
 import React from 'react';
+// Corrected: Import icons from their specific set, 'fi' for Feather Icons.
+import { FiBarChart2, FiFileText,  FiMap } from 'react-icons/fi';
 
 // A simple component to render a bar chart for scores
 const SkillChart = ({ scores }) => (
@@ -25,18 +27,18 @@ const Step3_Report = ({ report, userProfile, onStartOver }) => {
       <h2>Your Personalized Career Report</h2>
       
       <div className="report-section">
-        <h3>📊 Skill Analysis</h3>
+        <h3><FiBarChart2 /> Skill Analysis</h3>
         <p>Here's a breakdown of your assessed skills.</p>
         <SkillChart scores={report.skillScores} />
       </div>
 
       <div className="report-section">
-        <h3>🚀 Career Readiness Summary</h3>
+        <h3><FiFileText /> Career Readiness Summary</h3>
         <p>{report.summary}</p>
       </div>
       
       <div className="report-section">
-        <h3>💡 Recommendations</h3>
+        <h3> Recommendations</h3>
         <ul>
           {report.recommendations.map((rec, index) => (
             <li key={index}>{rec}</li>
@@ -45,7 +47,7 @@ const Step3_Report = ({ report, userProfile, onStartOver }) => {
       </div>
 
       <div className="report-section">
-        <h3>🗺️ Suggested Learning Path</h3>
+        <h3><FiMap /> Suggested Learning Path</h3>
         <p>Follow these steps to level up your skills:</p>
         <ul className="learning-path">
             {report.learningPath.map((item, index) => (
