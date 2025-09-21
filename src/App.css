@@ -147,7 +147,7 @@ body {
 /* Button styles */
 button {
   background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-hover) 100%);
-  color: white;
+  color: grey;
   border: none;
   padding: 0.875rem 1.5rem;
   border-radius: 8px;
